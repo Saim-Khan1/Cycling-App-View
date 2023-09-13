@@ -14,6 +14,10 @@
 		F254EFCC2859B9E600F1AC29 /* CyclingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EFCB2859B9E600F1AC29 /* CyclingTests.swift */; };
 		F254EFD62859B9E600F1AC29 /* CyclingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EFD52859B9E600F1AC29 /* CyclingUITests.swift */; };
 		F254EFD82859B9E600F1AC29 /* CyclingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EFD72859B9E600F1AC29 /* CyclingUITestsLaunchTests.swift */; };
+		F254EFE52859BA0800F1AC29 /* PlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EFE42859BA0800F1AC29 /* PlacesList.swift */; };
+		F254EFE72859BA1700F1AC29 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254EFE62859BA1700F1AC29 /* CityView.swift */; };
+		F2795B0E285A7B5D006ACEC4 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2795B0D285A7B5D006ACEC4 /* RouteView.swift */; };
+		F2795B11285B3A4C006ACEC4 /* PlaceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2795B10285B3A4C006ACEC4 /* PlaceCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		F254EFD12859B9E600F1AC29 /* CyclingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyclingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F254EFD52859B9E600F1AC29 /* CyclingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingUITests.swift; sourceTree = "<group>"; };
 		F254EFD72859B9E600F1AC29 /* CyclingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F254EFE42859BA0800F1AC29 /* PlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesList.swift; sourceTree = "<group>"; };
+		F254EFE62859BA1700F1AC29 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
+		F2795B0D285A7B5D006ACEC4 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		F2795B10285B3A4C006ACEC4 /* PlaceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		F254EFAE2859B9E100F1AC29 = {
 			isa = PBXGroup;
 			children = (
+				F254EFE82859C08200F1AC29 /* Packages */,
 				F254EFB92859B9E200F1AC29 /* Cycling */,
 				F254EFCA2859B9E600F1AC29 /* CyclingTests */,
 				F254EFD42859B9E600F1AC29 /* CyclingUITests */,
@@ -95,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F254EFBA2859B9E200F1AC29 /* CyclingApp.swift */,
-				F254EFBC2859B9E200F1AC29 /* ContentView.swift */,
+				F2795B0F285B3A11006ACEC4 /* Views */,
 				F254EFBE2859B9E500F1AC29 /* Assets.xcassets */,
 				F254EFC02859B9E500F1AC29 /* Preview Content */,
 			);
@@ -125,6 +134,49 @@
 				F254EFD72859B9E600F1AC29 /* CyclingUITestsLaunchTests.swift */,
 			);
 			path = CyclingUITests;
+			sourceTree = "<group>";
+		};
+		F254EFE82859C08200F1AC29 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F2795B0F285B3A11006ACEC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F254EFBC2859B9E200F1AC29 /* ContentView.swift */,
+				F2795B12285B3A52006ACEC4 /* Places */,
+				F2795B13285B3A65006ACEC4 /* Cities */,
+				F2795B14285B3A6E006ACEC4 /* Routes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2795B12285B3A52006ACEC4 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				F254EFE42859BA0800F1AC29 /* PlacesList.swift */,
+				F2795B10285B3A4C006ACEC4 /* PlaceCard.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		F2795B13285B3A65006ACEC4 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				F254EFE62859BA1700F1AC29 /* CityView.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		F2795B14285B3A6E006ACEC4 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				F2795B0D285A7B5D006ACEC4 /* RouteView.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F254EFBD2859B9E200F1AC29 /* ContentView.swift in Sources */,
+				F2795B11285B3A4C006ACEC4 /* PlaceCard.swift in Sources */,
+				F2795B0E285A7B5D006ACEC4 /* RouteView.swift in Sources */,
+				F254EFE72859BA1700F1AC29 /* CityView.swift in Sources */,
+				F254EFE52859BA0800F1AC29 /* PlacesList.swift in Sources */,
 				F254EFBB2859B9E200F1AC29 /* CyclingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cycling/Preview Content\"";
+				DEVELOPMENT_TEAM = WS8CY45H4Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Cycling/Preview Content\"";
+				DEVELOPMENT_TEAM = WS8CY45H4Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
