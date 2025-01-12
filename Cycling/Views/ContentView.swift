@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Cycling
 //
-//  Created by Saim Khan on 15/06/2022.
+//  Created by Saim Khan on 9/16/24.
 //
 
 import SwiftUI
@@ -25,13 +25,9 @@ struct ContentView: View {
                     Label("Profile", systemImage: "person.fill")
                 }
         }
-        .accentColor(Color(red: 128/255, green: 176/255, blue: 126/255))
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .colorScheme(.dark)
-    }
+#Preview {
+    ContentView()
 }
